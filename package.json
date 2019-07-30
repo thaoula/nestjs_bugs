@@ -1,0 +1,29 @@
+{
+    "name": "test-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start.noprefix": "ts-node -r tsconfig-paths/register ./server.test.prefix.ts",
+        "start.prefix": "ts-node -r tsconfig-paths/register ./server.test.prefix.ts /api",
+        "start.exception": "ts-node -r tsconfig-paths/register ./server.test.middleware.exception.ts",
+        "start.nocache": "ts-node -r tsconfig-paths/register ./server.test.middleware.exception.ts nocache"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@nestjs/common": "6.5.3",
+        "@nestjs/core": "6.5.3",
+        "@nestjs/platform-fastify": "^6.5.3",
+        "@types/node": "^12.6.8",
+        "reflect-metadata": "^0.1.12",
+        "rxjs": "^6.5.2",
+        "ts-node": "^8.3.0",
+        "tsconfig-paths": "^3.7.0",
+        "typescript": "3.4.1",
+        "zone.js": "^0.8.26"
+    },
+    "devDependencies": {
+        "nodemon": "1.18.4"
+    }
+}
